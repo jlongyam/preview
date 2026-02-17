@@ -4,8 +4,33 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <title>Preview</title>
+  <link rel="stylesheet" href="preview.css">
 </head>
 <body>
-  
+  <div id="preview">
+    <input id="toggle_nav" type="checkbox">
+    <div id="preview_nav">
+      <h3>Test</h3>
+      <ul>
+        <li>
+          <h4>Example</h4>
+          <ul>
+            <li><a href="play/example.html" target="preview_iframe">Example</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <label id="preview_nav_layer" for="toggle_nav"></label>
+    <div id="preview_main">
+      <div id="preview_main_bar">
+        <div id="preview_main_bar_left">
+          <label id="icon_menu" for="toggle_nav"></label>
+        </div>
+      </div>
+      <div id="preview_main_container">
+        <iframe src="template.html" name="preview_iframe"></iframe>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

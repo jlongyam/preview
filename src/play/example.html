@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="content-type" content="text/html">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Play</title>
+  <script src="display.js" data-src=".."></script>
+</head>
+
+<body>
+  <script>
+    window.addEventListener('load', function () {
+      displayHtml({
+        html: `
+          <h1 class="test">TEST</h1>
+        `,
+        js: `
+          document.querySelector('h1').textContent = "Done";
+        `
+      })
+    });
+  </script>
+
+</html>

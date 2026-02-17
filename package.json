@@ -2,6 +2,18 @@
   "name": "@jlongyam/blank",
   "version": "1.0.0",
   "displayName": "Preview",
+  "description": "Simple cross platform HTML previewer",
+  "keywords": [
+    "previewer",
+    "playground"
+  ],
+  "author": "jlongyam",
+  "license": "MIT",
+  "homepage": "https://github.com/jlongyam/preview",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jlongyam/preview.git"
+  },
   "devDependencies": {
     "cordova": "^12.0.0",
     "cordova-browser": "^7.0.0",
@@ -17,15 +29,18 @@
     ]
   },
   "scripts": {
+    "sync": "cp -r src/ www/",
     "browser:install": "cordova platform add browser",
-    "browser:prepare": "scripts/prepare.sh",
     "browser": "cordova run browser",
-    "sync": "cordova build browser",
+    "browser:sync": "npm run sync && cordova build browser",
     "android:install": "cordova platform add android",
     "android": "cordova run android",
+    "android:sync": "npm run sync && npm run android",
     "ios:install": "cordova platform add ios",
-    "ios": "cordova run ios  --target=\"iPhone-17-Pro\""
+    "ios": "cordova run ios  --target=\"iPhone-17-Pro\"",
+    "ios:sync": "npm run sync && npm run ios"
   },
+  "files": ["src", "config.xml"],
   "publishConfig": {
     "access": "public",
     "registry": "https://npm.pkg.github.com/"
