@@ -1,0 +1,23 @@
+:root {
+  --ff-mono_fira: "Fira Mono", "Consolas", "Menlo", "Monaco", "Liberation Mono", monospace;
+  --bg-dark: #222;
+  --bg-dark_2: #181c20;
+  --bg-dark_3: #2c313a;
+  --bg-dark_4: #23272e;
+  --bg-theme: coral;
+  --br-dark: #333;
+  --fg-dark: #eee;
+  --fg-dark_2: #fff;
+  --fg-dark_3: #8ecae6;
+  --fg-dark_4:  #bdb2ff;
+  --fg-dark_5: #adb5bd;
+  --fg-dark_6: #ffd166;
+  --fg-log: var(--fg-dark);
+  --fg-info: var(--fg-dark_3);
+  --fg-warn: var(--fg-dark_6);
+  --fg-error: #ef476f;
+  --fg-debug: #06d6a0;
+  --fg-assert: #ffb703;
+  --fg-trace: var(--fg-dark_5);
+  --fg-time: var(--fg-dark_4);
+}

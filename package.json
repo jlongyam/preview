@@ -1,0 +1,40 @@
+{
+  "name": "@jlongyam/blank",
+  "version": "1.0.0",
+  "displayName": "Blank",
+  "engines": {
+    "node": ">=18.16"
+  },
+  "dependencies": {
+    "cordova-plugin-device": "2.1.0",
+    "cordova-plugin-file": "8.1.3"
+  },
+  "devDependencies": {
+    "cordova": "^12.0.0",
+    "cordova-android": "^14.0.1",
+    "cordova-browser": "^7.0.0",
+    "cordova-ios": "^8.0.0"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-device": {},
+      "cordova-plugin-file": {}
+    },
+    "platforms": [
+      "browser",
+      "android",
+      "ios"
+    ]
+  },
+  "scripts": {
+    "browser:install": "cordova platform add browser",
+    "browser:prepare": "scripts/prepare.sh",
+    "browser": "cordova run browser",
+    "sync": "cordova build browser",
+    "android:install": "cordova platform add android",
+    "android": "cordova run android",
+    "ios:install": "cordova platform add ios",
+    "ios": "cordova run ios  --target=\"iPhone-17-Pro\"",
+    "iconizr": "scripts/icon.sh"
+  }
+}
