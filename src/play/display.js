@@ -13,12 +13,15 @@ window.addEventListener('load', function () {
   function innerHTML(title = 'Demo') {
     let txt = `
     <header>
-      <h1 title="title">${title}</h1>
+      <h2 title="title">${title}</h2>
+      <p>Usage HTML with JS, external CSS</p>
     </header>
-    <main id="main"></main>
-    <footer>
+    <main>
       <div id="result">RESULT</div>
       <iframe id="preview"></iframe>
+    </main>
+    <footer id="main">
+      
     </footer>`
       ;
     return txt;
@@ -34,7 +37,6 @@ window.addEventListener('load', function () {
   function displayHtml(content = {}) {
     var snippet = {
       html: sourceCode({
-        open: true,
         title: 'HTML',
         id: 'txt_html',
         content: stripInitial(content.html).trim()

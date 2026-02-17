@@ -61,7 +61,7 @@ iframe {
   color: black;
 }
 
-h1 {
+h1, h2, h3 {
   margin-top: -2.5%;
   border-bottom: 2px solid gray;
   color: #e03300
